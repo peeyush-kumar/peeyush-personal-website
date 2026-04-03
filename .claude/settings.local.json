@@ -20,7 +20,15 @@
       "Bash(curl:*)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(gh repo:*)",
+      "Bash(npx wrangler:*)",
+      "Read(//home/peeyush-us/.wrangler/config/**)",
+      "Read(//home/peeyush-us/**)",
+      "Bash(export CLOUDFLARE_API_TOKEN=\"cfat_eRKK7Ve3Nje0zNCHUpxuPozXRGWll4lA69T1ISIK15376591\")",
+      "Bash(export ACCOUNT_ID=\"5640d956f22c9fc0b6280bc450368da7\")",
+      "Bash(export PROJECT_NAME=\"peeyush-personal-website\")"
     ]
   }
 }

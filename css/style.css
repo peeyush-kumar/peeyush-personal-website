@@ -600,6 +600,9 @@ hr,
   border-bottom: 3px solid black;
 }
 
+.site-footer,
+.site-footer a,
+.site-footer a:visited,
 .site-info a,
 .site-info a:visited {
   color: #000;
