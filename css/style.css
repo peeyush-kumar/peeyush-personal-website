@@ -1,0 +1,755 @@
+/* ==========================================================================
+   Nordic theme - Static version of peeyush-kumar.com
+   Fonts: Amatic SC (site title), PT Serif (body), Oswald (nav/meta)
+   Based on WordPress Nordic theme by Sandpatrol
+   ========================================================================== */
+
+/* Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'PT Serif', Georgia, serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #000;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  background-color: transparent;
+}
+
+a:visited {
+  color: #333;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+  outline: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+/* Layout */
+.site {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.site-header {
+  padding-top: 30px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.site-branding {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 25px 0;
+}
+
+.site-title {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  font-size: 4rem;
+  text-transform: uppercase;
+  line-height: normal;
+  margin-bottom: -1rem;
+  margin-top: -0.2rem;
+}
+
+.site-title a,
+.site-title a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.site-title a:hover {
+  color: #07948B;
+  text-decoration: none;
+}
+
+.site-description {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 100;
+  font-size: 2rem;
+  color: #000;
+  margin-top: -0.5rem;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+.main-navigation {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  clear: both;
+  display: block;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  height: 2em;
+  padding: 0.15em 1em 1em;
+  font-weight: normal;
+  font-size: 1.5rem;
+  text-decoration: none;
+  line-height: 1.5;
+  color: #000;
+  margin: auto;
+  float: left;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-menu > li {
+  float: left;
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+.nav-menu > li > a {
+  display: block;
+  padding: 0.2em 0.9em;
+  font-size: 1rem;
+  text-decoration: none;
+  line-height: 1.3em;
+  color: #000;
+}
+
+.nav-menu > li > a:visited {
+  color: #000;
+}
+
+.nav-menu > li > a:hover {
+  color: #07948B;
+  text-decoration: none;
+}
+
+.nav-menu > li.current > a,
+.nav-menu > li.current > a:hover {
+  color: #07948B;
+}
+
+/* Dropdown */
+.sub-menu {
+  list-style: none;
+  position: absolute;
+  left: 0;
+  z-index: 99999;
+  display: none;
+  float: left;
+  padding: 0;
+  background: #B2B2B2;
+  min-width: 280px;
+}
+
+.has-submenu:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu li {
+  padding: 5px;
+  text-transform: none;
+  font-family: 'PT Serif', serif;
+  border-bottom: solid black 1px;
+  list-style: none;
+}
+
+.sub-menu li:last-child {
+  border-bottom: none;
+}
+
+.sub-menu li a {
+  display: block;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.sub-menu li a:hover {
+  color: #07948B;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+.site-content {
+  padding: 20px 0;
+}
+
+.entry-header {
+  margin-bottom: 2rem;
+}
+
+.entry-title {
+  margin: 0.7em 0 2rem;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3.3125rem;
+  font-weight: 700;
+  line-height: 1.3em;
+  color: #000;
+}
+
+.entry-content {
+  margin: 1.5em 0 0;
+}
+
+.entry-content p,
+.entry-content ul,
+.entry-content ol {
+  font-size: 1.125rem;
+  line-height: 1.6em;
+  margin-bottom: 1.2em;
+}
+
+.entry-content a {
+  text-decoration: underline;
+}
+
+.entry-content a:hover {
+  color: #07948B;
+}
+
+.entry-content h1 { font-size: 4rem; }
+.entry-content h2 {
+  font-size: 2.5rem;
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+}
+.entry-content h3 {
+  font-size: 2rem;
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+}
+.entry-content h4 { font-size: 1.75rem; }
+.entry-content h5 { font-size: 1.625rem; }
+.entry-content h6 { font-size: 1.4375rem; }
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+  margin-bottom: 0.4em;
+}
+
+.entry-content ul,
+.entry-content ol {
+  margin-left: 3em;
+  padding: 0;
+}
+
+.entry-content li {
+  margin-bottom: 0.5em;
+}
+
+/* Verse block (poem) - matches Nordic theme pre styling */
+pre.wp-block-verse {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+  white-space: pre-wrap;
+  text-align: left;
+}
+
+/* Blockquote - Nordic theme style with top/bottom borders */
+blockquote {
+  padding: 1em 1.5em 0;
+  margin: 0 0 1em;
+  font-style: italic;
+  border-top: solid 1px hsl(0, 0%, 80%);
+  border-bottom: solid 1px hsl(0, 0%, 80%);
+}
+
+/* WordPress wp-block-quote - uses WordPress core styling */
+blockquote.wp-block-quote {
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  border: none;
+  border-top: solid 1px hsl(0, 0%, 80%);
+  border-bottom: solid 1px hsl(0, 0%, 80%);
+  padding: 1em 1.5em 0;
+  margin: 1.5em 0;
+}
+
+blockquote em {
+  font-style: normal;
+}
+
+blockquote p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 1em;
+  margin-left: 40%;
+  font-size: 1.25rem;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  line-height: 1.5em;
+  text-align: right;
+}
+
+/* Separator */
+hr,
+.separator {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+.is-style-wide {
+  background-color: #000;
+  height: 2px;
+  margin: 2em 0;
+}
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+.about-layout {
+  overflow: hidden;
+  margin-bottom: 1.5em;
+}
+
+.about-image {
+  float: right;
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.about-image img {
+  width: 280px;
+  height: auto;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+/* Featured Images - single post */
+.single-post-thumbnail {
+  background: #fff;
+  margin-bottom: 1em;
+}
+
+.single-post-thumbnail img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.footnote {
+  font-size: 0.875rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+/* ==========================================================================
+   Blog Page
+   ========================================================================== */
+/* Blog - WordPress su-posts default-loop style */
+.su-posts-default-loop {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.su-posts-default-loop .su-post {
+  margin-bottom: 2.5em;
+  line-height: 1.5;
+}
+
+.su-posts-default-loop .su-post::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.su-posts-default-loop .su-post-thumbnail {
+  float: left;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-right: 1em;
+}
+
+.su-posts-default-loop .su-post-thumbnail a {
+  display: block;
+  text-decoration: none;
+}
+
+.su-posts-default-loop .su-post-thumbnail img {
+  display: block;
+  margin: 0;
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+}
+
+.su-posts-default-loop h2.su-post-title {
+  clear: none;
+  margin: 0 0 0.3em;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.su-post-title a {
+  color: #000;
+  text-decoration: none;
+}
+
+.su-post-title a:hover {
+  color: #07948B;
+  text-decoration: underline;
+}
+
+.su-posts-default-loop .su-post-meta {
+  margin-bottom: 0.7em;
+  font-size: 0.8em;
+  opacity: 0.6;
+}
+
+.su-posts-default-loop .su-post-excerpt {
+  margin-bottom: 0.5em;
+}
+
+.su-posts-default-loop .su-post-excerpt p {
+  margin: 1em 0;
+}
+
+.su-posts-default-loop .su-post-excerpt p:last-child {
+  margin-bottom: 0;
+}
+
+.entry-meta {
+  margin-bottom: 1rem;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  color: #666;
+}
+
+.entry-meta a {
+  font-weight: 700;
+}
+
+.continue-reading {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+.continue-reading a {
+  color: #000;
+}
+
+.continue-reading a:hover {
+  color: #07948B;
+}
+
+/* ==========================================================================
+   Contact Form
+   ========================================================================== */
+.contact-form {
+  max-width: 600px;
+}
+
+.form-row-name {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row-name .form-field {
+  flex: 1;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  color: #000;
+}
+
+.form-field .required {
+  color: red;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 8px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  color: #111;
+  outline: none;
+}
+
+.submit-btn {
+  padding: 1em 2em;
+  font-size: 1rem;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1;
+  color: hsl(0, 0%, 100%);
+  background: hsl(0, 0%, 24%);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: hsl(0, 0%, 0%);
+}
+
+.form-note {
+  margin-top: 20px;
+  font-size: 0.875rem;
+  color: #999;
+}
+
+.form-note code {
+  background: #f4f4f4;
+  padding: 2px 6px;
+  border-radius: 2px;
+  font-size: 0.8125rem;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.site-footer {
+  padding: 2em;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.875rem;
+  color: #000;
+  background-color: #fff;
+  width: 100%;
+  max-width: 1006px;
+  margin: 0 auto;
+}
+
+.site-info {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 3px solid black;
+}
+
+.site-info a,
+.site-info a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.site-info a:hover {
+  color: #07948B;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Alignments (WordPress compat)
+   ========================================================================== */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Clearfix */
+.entry-content::before,
+.entry-content::after {
+  content: "";
+  display: table;
+}
+
+.entry-content::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media screen and (max-width: 680px) {
+  .site-title {
+    font-size: 3rem;
+  }
+
+  .entry-title {
+    font-size: 2.8rem;
+    line-height: 1.3em;
+  }
+
+  .entry-content h1 { font-size: 2.7rem; }
+  .entry-content h2 { font-size: 2.6rem; }
+  .entry-content h3 { font-size: 2.4rem; }
+  .entry-content h4 { font-size: 2.2rem; }
+  .entry-content h5 { font-size: 2rem; }
+  .entry-content h6 { font-size: 1.8rem; }
+
+  .entry-content p,
+  .entry-content ul,
+  .entry-content ol {
+    font-size: 1rem;
+  }
+
+  .entry-content blockquote p {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-menu {
+    display: none;
+    padding-left: 0;
+  }
+
+  .nav-menu.active {
+    display: block;
+  }
+
+  .nav-menu > li {
+    display: block;
+    float: none;
+    clear: both;
+  }
+
+  .nav-menu > li > a {
+    padding: 1.3em 2em;
+  }
+
+  .nav-menu > li > li > a {
+    padding-left: 3em;
+  }
+
+  .sub-menu,
+  .nav-menu .sub-menu {
+    position: static;
+    top: inherit;
+    left: 0;
+    display: none;
+    float: none;
+    background: transparent;
+    min-width: 100%;
+  }
+
+  .has-submenu:hover .sub-menu {
+    display: none;
+  }
+
+  .has-submenu.open .sub-menu {
+    display: block;
+  }
+
+  .sub-menu li a {
+    width: 100%;
+    padding-left: 3em;
+  }
+
+  .about-image {
+    float: none;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 1.5em;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .form-row-name {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  blockquote.alignleft,
+  blockquote.alignright {
+    width: 100%;
+    padding: 1em 1.5em 0;
+  }
+}

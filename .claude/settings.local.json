@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sL --max-time 30 -A \"Mozilla/5.0 \\(X11; Linux x86_64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.0.0 Safari/537.36\" \"https://peeyush-kumar.com/blog/\")",
+      "Bash(curl -sI https://peeyushkumarloj.substack.com/api/v1/archive?sort=new\\\\&limit=3 -o /tmp/substack-headers.txt)",
+      "Bash(curl -s \"https://peeyushkumarloj.substack.com/api/v1/archive?sort=new&limit=3\" -o /tmp/substack-response.json)",
+      "Bash(ssh:*)",
+      "Bash(scp \"peeyushk@50.87.253.32:~/public_html/wp-content/uploads/2022/09/peeyush_kumar_outdoors_reduced2.jpg\" /workspace/peeyush-personal-website/images/uploads/)",
+      "Bash(scp \"peeyushk@50.87.253.32:~/public_html/wp-content/uploads/2022/09/aehter-transparent.png\" /workspace/peeyush-personal-website/images/uploads/)",
+      "Bash(python3:*)",
+      "WebFetch(domain:peeyush-kumar.com)",
+      "Bash(curl -s 'https://peeyush-kumar.com/')",
+      "Bash(curl -s 'https://peeyush-kumar.com/blog/')",
+      "Bash(curl -s 'https://peeyush-kumar.com/wp-content/themes/nordic/style.css')",
+      "Bash(curl -s http://localhost:8000/)",
+      "Bash(curl -s 'https://peeyush-kumar.com/wp-content/plugins/shortcodes-ultimate/includes/css/shortcodes.css')",
+      "Bash(scp 'peeyushk@50.87.253.32:~/public_html/wp-content/uploads/2022/09/DALL·E-2022-09-08-10.36.58-Autumn-Skye-Art-of-a-person-meditating-1-e1664338085715.png' /workspace/peeyush-personal-website/images/uploads/meditation.png)",
+      "Bash(scp 'peeyushk@50.87.253.32:~/public_html/wp-content/uploads/2022/09/DALL·E-2022-09-18-00.43.07-Oil-painting-of-authentic-relationship-e1664338133552.png' /workspace/peeyush-personal-website/images/uploads/relationship.png)",
+      "Bash(scp 'peeyushk@50.87.253.32:~/public_html/wp-content/uploads/2022/09/DALL·E-2022-09-20-14.01.30-Oil-painting-of-rich-collaboration-e1664338177958.png' /workspace/peeyush-personal-website/images/uploads/collaboration.png)",
+      "Bash(curl:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
